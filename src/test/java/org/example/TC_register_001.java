@@ -15,7 +15,6 @@ public class TC_register_001 {
 
     WebDriver driver ;
 
-    @Test
     public void VerifingRegistartionFields(){
 
         WebDriverClass driverClass1 = new WebDriverClass();

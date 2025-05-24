@@ -13,6 +13,8 @@ public class POM_OrangeHRM_001 {
     public void baseMethod(){
 
         WebDriver driver = new ChromeDriver();
+        TC_register_001 tcRegister001 =new TC_register_001();
+        tcRegister001.VerifingRegistartionFields();
 
     }
 }

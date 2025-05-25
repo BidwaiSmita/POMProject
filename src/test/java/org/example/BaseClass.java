@@ -6,7 +6,6 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-@Test
 public class BaseClass {
 
     WebDriver driver = null;
@@ -21,6 +20,7 @@ public class BaseClass {
 
     @AfterMethod
     public void tearDown(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         driver.quit();
     }
 }

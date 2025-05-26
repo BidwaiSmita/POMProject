@@ -8,7 +8,7 @@ import java.time.Duration;
 
 public class BaseClass {
 
-    WebDriver driver = null;
+    protected static WebDriver driver = null;
 
     @BeforeMethod
     public void BasePage(){
